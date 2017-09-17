@@ -1,0 +1,36 @@
+/* Basic Responsive Images and Video*/
+img, video{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+
+
+@supports (grid-area: auto){
+  
+  article.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas:
+      "hero hero hero"
+      "title detail detail"
+      "intro detail detail"
+      "text map map";
+  }
+  
+  
+  .heroimage{ grid-area: hero; }
+  
+  .title{ grid-area: title; }
+  
+  .introduction{ grid-area: intro; }
+  
+  .map{ grid-area: map; }
+  
+  .detailimages{grid-area: detail}
+
+  .maintext{ grid-area: text}
