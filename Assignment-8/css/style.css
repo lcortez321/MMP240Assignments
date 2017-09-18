@@ -1,5 +1,17 @@
-@supports (grid-area: auto)
-{
+/* Basic Responsive Images and Video*/
+img, video{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+@supports (grid-area: auto){
   
   article.main{
     display: grid;
@@ -11,8 +23,7 @@
       "intro detail detail"
       "text map map";
   }
-  
-  
+  }
   .heroimage{ grid-area: hero; }
   
   .title{ grid-area: title; }
