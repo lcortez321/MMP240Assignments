@@ -28,8 +28,8 @@ img, video{
  
 
   .heroimage{ grid-area: hero;
-      width: 62.5%;
-      height: 50%;
+      width: 1200;
+      height: 400;
       float: top,
           
           
@@ -38,26 +38,40 @@ img, video{
 
   }
   
-  .title{ grid-area: title; }
+  .title{ grid-area: title; 
+    text-align: justify;
+
+
+
+  }
     
   
   .introduction{ grid-area: intro; }
   
-  .map{ grid-area: map; }
-  
-  detailimages{grid-area: detail;
+  .map{ grid-area: map; 
+    width: 50%;
+      height: 25%;
+      padding: 0px;
     
+    }
+  
+  .detailimages{grid-area: detail;
+    grid-area: detail;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     
     }
 
-  .maintext{ grid-area: text;}
+  .maintext{ grid-area: text;
+  text-align: justify;
+ 
   
-  .detailimages{
-    width: 50%;
-    height: 25%;
-    padding: 0px;
-   /* vertical-align: baseline;*/
-    
+ 
+
 
   }
+
+
+  
+
 }
