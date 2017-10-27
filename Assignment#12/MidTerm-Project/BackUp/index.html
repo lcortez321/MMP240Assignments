@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Web page Draft</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        
+        <h1 class="logo"><a href="#">Memories From The Past</a></h1> <a id="menu-icon">&#9776; Menu</a>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="lifesaver.html" >Pictures</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="otherpictures.html">Other Pictures</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <article class="main">
+<!--        homepage content goes here-->
+    </article>
+
+
+    <footer>
+        <h4>
+            <p>© Copyright 2017 Luis Cortez</p>
+        </h4>
+
+    </footer>
+
+    <!--    This is javascript needed for the navigation to work-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#menu-icon').on('click', function() {
+                $('.navbar').toggleClass('expand');
+                return false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
